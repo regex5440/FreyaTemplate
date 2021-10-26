@@ -62,10 +62,21 @@ $(document).on('scroll', () => {
     $('.py-carousel4').css({ 'background-position': '0px ' + Math.round(-offsetheight4 / 50) + 'px' });
     $('.py-carousel4 > .container > .py_text').css({ 'transform': 'translate3d(0px, ' + Math.round(-offsetheight3 / 35) + 'px, 0px' });
 });
-
-
-var menu_Btn = document.getElementsByClassName('alex_Btn')[0];
-menu_Btn.addEventListener('click', () => {
+let menu_btn = document.getElementsByClassName('alex_Btn')[0];
+var hrs = menu_btn.getElementsByTagName('hr');
+var isopen=true;
+menu_btn.onclick= () => {
     $('nav').slideToggle();
-    $('.contact_footer').toggle('1000ms');
-});
+    $('.contact_footer').toggle();
+    if(isopen){
+        hrs[0].style.transform='rotate(-42deg)';
+        hrs[1].style='width: 0; visibility: hidden';
+        hrs[2].style.transform='rotate(40deg)';
+        isopen=false;
+    }else{
+        hrs[0].style.transform='rotate(0deg)';
+        hrs[1].style='width: 97%; visibility: visible';
+        hrs[2].style.transform='rotate(0deg)';
+        isopen=true;
+    }
+};
