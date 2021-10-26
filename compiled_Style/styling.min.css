@@ -1,0 +1,694 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+.logo .logo-img {
+  user-select: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: #1f1f1f;
+  border-radius: 13px 13px 0 13px;
+  color: #fafafa;
+  cursor: pointer;
+  size: 2em;
+  padding: 8px 8px 5px 8px;
+  width: 3em;
+  text-align: center;
+}
+
+.exp_header, .header {
+  transition: all 300ms linear 0s;
+}
+
+html body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(59, 59, 59, 0.151);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #6e6e6e;
+  transition: all 700ms ease-in 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5a5a5a;
+}
+
+.header {
+  position: fixed;
+  left: 0px;
+  width: 100%;
+  z-index: 2;
+  text-align: center;
+}
+
+.exp_header {
+  font-family: "Josefin sans", sans-serif;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  background-color: #f8f9f9f0;
+  flex-direction: row;
+  display: inline-block;
+}
+
+.logo {
+  position: relative;
+  top: 50%;
+  left: 2%;
+  transform: translate(0%, -50%);
+}
+.alex_Btn {
+  display: none;
+}
+
+nav {
+  position: absolute;
+  margin: auto;
+  height: 3.5rem;
+  margin-top: -25px;
+  margin-left: 70px;
+  font-size: 16px;
+  width: auto;
+}
+
+.contact_footer {
+  font-size: 14px;
+  position: relative;
+  float: right;
+  margin-top: -10px;
+}
+.contact_footer .platforms {
+  color: #888;
+}
+.contact_footer .platforms a {
+  padding: 0 10px;
+  transition: color 100ms ease;
+}
+.contact_footer .platforms a:hover {
+  color: #333;
+}
+
+ul.navbar li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.dropdown {
+  position: absolute;
+  display: none;
+  margin-left: -10px;
+  text-align: left;
+  font-size: 14px;
+  padding: 15px 0 10px 15px;
+  width: 33%;
+  background: #f8f9f9f5;
+}
+.dropdown li {
+  display: block;
+  height: 1.5em;
+  width: 100%;
+  margin-top: 14px;
+}
+.dropdown li:last-child {
+  margin-bottom: 20px;
+}
+
+.has_dropdown:hover > .dropdown, .dropdown:hover {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 400;
+  padding: 0 8px;
+  color: #888;
+  transition-duration: 200ms;
+}
+
+a:hover {
+  color: #333;
+}
+
+.carousel .img3 .text, .carousel .img2 .text, .carousel .img1 .text {
+  display: flex;
+  margin-bottom: -10px;
+  overflow: hidden;
+  justify-content: center;
+  align-content: space-around;
+  height: 25vh;
+  background: linear-gradient(180deg, rgba(255, 255, 225, 0), black);
+}
+.carousel .img3 .text .lable, .carousel .img2 .text .lable, .carousel .img1 .text .lable {
+  overflow: hidden;
+  align-self: center;
+  align-items: flex-start;
+  text-align: left;
+}
+.carousel .img3 .text .lable .smallText, .carousel .img2 .text .lable .smallText, .carousel .img1 .text .lable .smallText {
+  animation-name: text;
+  animation-duration: 700ms;
+  animation-delay: 100ms;
+  font-size: 16px;
+}
+.carousel .img3 .text .lable .bigText, .carousel .img2 .text .lable .bigText, .carousel .img1 .text .lable .bigText {
+  animation-name: text;
+  animation-duration: 700ms;
+  font-size: 40px;
+  margin-top: 20px;
+}
+@keyframes text {
+  0% {
+    opacity: 0.4;
+    margin-left: -100px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0px;
+  }
+}
+
+.carousel .img3 .text .carousel_Btn, .carousel .img2 .text .carousel_Btn, .carousel .img1 .text .carousel_Btn {
+  margin-left: 30%;
+  text-transform: uppercase;
+  user-select: none;
+  align-self: center;
+  border: 1px solid white;
+  color: whitesmoke;
+  font-size: 24px;
+  transition-duration: 300ms;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 7px;
+}
+
+.carousel .img3, .carousel .img2, .carousel .img1 {
+  margin: auto;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.carousel {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  font-family: "Josefin sans", sans-serif;
+}
+.carousel .img1 {
+  background: url("http://markup.themewagon.com/tryfreya/assets/images/header_2.jpg");
+}
+.carousel .img1 .text .carousel_Btn:hover {
+  background-color: whitesmoke;
+  color: #4b4b4b;
+}
+.carousel .img2 {
+  background: url("http://markup.themewagon.com/tryfreya/assets/images/header_3.jpg");
+}
+.carousel .img2 .text .carousel_Btn:hover {
+  background-color: whitesmoke;
+  color: #4b4b4b;
+}
+.carousel .img3 {
+  background: url("http://markup.themewagon.com/tryfreya/assets/images/header_1.jpg");
+}
+.carousel .img3 .text .carousel_Btn:hover {
+  background-color: whitesmoke;
+  color: #4b4b4b;
+}
+.carousel .mySlides {
+  display: none;
+}
+.carousel .mySlides:first-child {
+  display: block;
+}
+.carousel .prev {
+  margin-left: -100px;
+}
+.carousel .prev, .carousel .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.carousel .next {
+  right: 0;
+  margin-right: -100px;
+  border-radius: 3px 0 0 3px;
+}
+.carousel .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  overflow: hidden;
+  bottom: 8px;
+  text-align: center;
+}
+.carousel .fade {
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+}
+
+.carousel:hover .prev {
+  margin-left: 0px;
+}
+.carousel:hover .next {
+  margin-right: 0px;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.demo {
+  width: 100%;
+  height: 40%;
+  font-family: "Josefin sans", sans-serif;
+  margin-bottom: 60px;
+}
+
+.demoTextMargin {
+  padding: 3em;
+  display: block;
+}
+
+.demoText {
+  text-align: center;
+  margin: auto;
+  color: #555;
+  line-height: 2.5rem;
+  font-weight: 100;
+  margin-bottom: 50px;
+}
+.demoText .demoBigText {
+  font-size: 30px;
+}
+.demoText .demoSmallText {
+  color: #888;
+  margin-top: 20px;
+  line-height: 1.6em;
+  font-size: 20px;
+}
+
+.demoImageBlock {
+  margin: 60px auto auto auto;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: "Josefin sans", sans-serif;
+  align-content: center;
+}
+.demoImageBlock div {
+  margin: 16px;
+}
+.demoImageBlock .residentialText, .demoImageBlock .commercialText, .demoImageBlock .hospitalityText {
+  margin: auto;
+  width: 21em;
+}
+.demoImageBlock .residentialText h2, .demoImageBlock .commercialText h2, .demoImageBlock .hospitalityText h2 {
+  text-transform: uppercase;
+  color: #555555;
+  font-weight: lighter;
+}
+.demoImageBlock p {
+  word-break: keep-all;
+  margin: auto;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.3rem;
+  word-spacing: -0.12rem;
+  font-size: 16px;
+  color: #888;
+  font-weight: 400;
+  width: 100%;
+  text-align: justify;
+}
+
+.py-carousel4 .container .py_text .smallText text, .py-carousel4 .container .py_text .bigText text, .py-carousel3 .container .py_text .smallText text, .py-carousel3 .container .py_text .bigText text, .py-carousel .container .py_text .smallText text, .py-carousel .container .py_text .bigText text {
+  animation-name: textappear;
+  animation-duration: 2000ms;
+  animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.py-carousel {
+  width: 100vw;
+  height: 70vh;
+  background-image: url("http://markup.themewagon.com/tryfreya/assets/images/banner_1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.py-carousel .container {
+  width: 100vw;
+  display: flex;
+  height: 100%;
+  background: #18182077;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.py-carousel .container .py_text {
+  font-family: "Josefin sans", sans-serif;
+  color: #fff;
+  text-align: center;
+  align-self: flex-end;
+  font-weight: lighter;
+}
+.py-carousel .container .py_text .bigText {
+  font-size: 5rem;
+}
+.py-carousel .container .py_text .smallText {
+  font-size: 1.5rem;
+}
+
+@keyframes textappear {
+  0% {
+    transform: matrix(1, 0, 0, 1, 0, 100);
+  }
+  100% {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+}
+.demoBenefit {
+  text-align: center;
+  font-family: "Josefin sans", sans-serif;
+  width: 53vw;
+  margin: auto;
+  font-weight: lighter;
+}
+.demoBenefit .demoBigText {
+  font-size: 30px;
+  color: #555;
+}
+.demoBenefit .demoSmallText {
+  line-height: 1.2em;
+  word-wrap: keep-all;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.1em;
+  color: #888;
+}
+
+.tableDecor {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.tableDecor .tFlexSecond {
+  display: flex;
+  flex-direction: row;
+}
+.tableDecor .tFlexSecond div {
+  margin: 16px;
+}
+
+.py-carousel2 {
+  width: 100vw;
+  height: 70vh;
+  background-image: url("http://markup.themewagon.com/tryfreya/assets/images/banner_2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.py-carousel2 .container {
+  width: 100vw;
+  display: flex;
+  height: 100%;
+  background: #18182077;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.py-carousel2 .container .py_text {
+  font-family: "Josefin sans", sans-serif;
+  color: #fff;
+  text-align: center;
+  align-self: flex-end;
+  font-weight: lighter;
+}
+.py-carousel2 .container .py_text .bigText {
+  font-size: 5rem;
+}
+.py-carousel2 .container .py_text .smallText {
+  font-size: 1.5rem;
+}
+
+.demoBrooklyn {
+  text-align: center;
+  font-family: "Josefin sans", sans-serif;
+  width: 53vw;
+  margin: auto;
+  font-weight: lighter;
+}
+.demoBrooklyn .demoBigText {
+  font-size: 30px;
+  color: #555;
+}
+.demoBrooklyn .demoSmallText {
+  line-height: 1.2em;
+  word-wrap: keep-all;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.1em;
+  color: #888;
+}
+
+.brooklynGreen {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.brooklynGreen .bFlexSecond {
+  display: flex;
+  flex-direction: row;
+}
+.brooklynGreen .bFlexSecond div {
+  margin: 16px;
+}
+
+.py-carousel3 {
+  width: 100vw;
+  height: 70vh;
+  background-image: url("http://markup.themewagon.com/tryfreya/assets/images/banner_3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: "-500px";
+}
+.py-carousel3 .container {
+  width: 100vw;
+  display: flex;
+  height: 100%;
+  background: #18182077;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.py-carousel3 .container .py_text {
+  font-family: "Josefin sans", sans-serif;
+  color: #fff;
+  text-align: center;
+  align-self: flex-end;
+  font-weight: lighter;
+}
+.py-carousel3 .container .py_text .bigText {
+  font-size: 5rem;
+}
+.py-carousel3 .container .py_text .smallText {
+  font-size: 1.5rem;
+}
+
+.demoPrestana {
+  text-align: center;
+  font-family: "Josefin sans", sans-serif;
+  width: 53vw;
+  margin: auto;
+  font-weight: lighter;
+}
+.demoPrestana .demoBigText {
+  font-size: 30px;
+  color: #555;
+}
+.demoPrestana .demoSmallText {
+  line-height: 1.2em;
+  word-wrap: keep-all;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.1em;
+  color: #888;
+}
+
+.rioDeJaneiro {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.rioDeJaneiro .rFlexSecond {
+  display: flex;
+  flex-direction: row;
+}
+.rioDeJaneiro .rFlexSecond div {
+  margin: 15px;
+}
+.rioDeJaneiro .rFlexThird {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.rioDeJaneiro .rFlexThird div {
+  margin: 15px;
+}
+
+.py-carousel4 {
+  width: 100vw;
+  height: 70vh;
+  background-image: url("http://markup.themewagon.com/tryfreya/assets/images/banner_4.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.py-carousel4 .container {
+  width: 100vw;
+  display: flex;
+  height: 100%;
+  background: #18182077;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.py-carousel4 .container .py_text {
+  font-family: "Josefin sans", sans-serif;
+  color: #fff;
+  text-align: center;
+  align-self: flex-end;
+  font-weight: lighter;
+}
+.py-carousel4 .container .py_text .bigText {
+  font-size: 5rem;
+}
+.py-carousel4 .container .py_text .smallText {
+  font-size: 1.5rem;
+}
+
+.demoHawaii {
+  text-align: center;
+  font-family: "Josefin sans", sans-serif;
+  width: 53vw;
+  margin: auto;
+  font-weight: lighter;
+}
+.demoHawaii .demoBigText {
+  font-size: 30px;
+  color: #555;
+}
+.demoHawaii .demoSmallText {
+  line-height: 1.2em;
+  word-wrap: keep-all;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.1em;
+  color: #888;
+}
+
+.Hawaii {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.Hawaii .htable1 img, .Hawaii .htable4 img {
+  width: 1111px;
+}
+.Hawaii .hFlexSecond {
+  display: flex;
+  flex-direction: row;
+}
+.Hawaii .hFlexSecond div {
+  margin: 16px;
+}
+
+footer {
+  background: #161820;
+  width: 100%;
+}
+footer .contact_footer_below {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e1e1e1;
+  padding: 20px;
+}
+footer .contact_footer_below .platforms {
+  cursor: pointer;
+  font-size: 20px;
+}
+footer .contact_footer_below .platforms * {
+  margin: 5px;
+}
+footer .developer_footer {
+  font-family: "Josefin sans", sans-serif;
+  justify-content: center;
+  padding: 50px;
+}
+footer .developer_footer .owner_info {
+  font-size: 20px;
+  color: #eee;
+  text-align: center;
+}
+footer .developer_footer .dev_info {
+  font-size: 16px;
+  color: #888;
+  text-align: center;
+}
+footer .developer_footer .dev_info a:hover {
+  text-decoration: underline;
+  color: #aaa;
+}
+
+/*# sourceMappingURL=styling.min.css.map */
